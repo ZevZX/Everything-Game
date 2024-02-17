@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://dy0688vhr1ud6"]
+
+[ext_resource type="Script" path="res://game/main_menu/start_button.gd" id="1_3sroh"]
+[ext_resource type="Script" path="res://game/main_menu/quit_button.gd" id="2_cqha5"]
+
+[node name="start_menu" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="title" type="TextEdit" parent="CanvasLayer"]
+offset_left = 509.0
+offset_top = 102.0
+offset_right = 658.0
+offset_bottom = 144.0
+text = "Everything Game"
+
+[node name="start_button" type="Button" parent="CanvasLayer"]
+offset_left = 522.0
+offset_top = 270.0
+offset_right = 620.0
+offset_bottom = 308.0
+text = "Start"
+script = ExtResource("1_3sroh")
+
+[node name="quit_button" type="Button" parent="CanvasLayer"]
+offset_left = 522.0
+offset_top = 332.0
+offset_right = 623.0
+offset_bottom = 363.0
+text = "Quit"
+script = ExtResource("2_cqha5")
+
+[connection signal="pressed" from="CanvasLayer/start_button" to="CanvasLayer/start_button" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/quit_button" to="CanvasLayer/quit_button" method="_on_pressed"]
