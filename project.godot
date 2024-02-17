@@ -10,12 +10,23 @@ config_version=5
 
 [application]
 
-config/name="Everything-game"
+config/name="Everything-Game"
 run/main_scene="res://game/main_menu/main_menu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/mode=3
+window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
+window/vsync/vsync_mode=0
 
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/snap/snap_2d_vertices_to_pixel=true
