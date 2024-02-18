@@ -12,7 +12,7 @@ offset_left = 240.0
 offset_top = 56.0
 offset_right = 389.0
 offset_bottom = 98.0
-text = "Game"
+text = "Everything Game"
 metadata/_edit_use_anchors_ = true
 
 [node name="start_button" type="Button" parent="CanvasLayer"]

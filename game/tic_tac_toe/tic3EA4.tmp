@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpcrfho03lnro"]
+
+[ext_resource type="Script" path="res://game/tic_tac_toe/tic_tac_toe.gd" id="1_84bu2"]
+[ext_resource type="PackedScene" uid="uid://dbmp8prataopr" path="res://game/tic_tac_toe/Board.tscn" id="1_sp424"]
+
+[node name="Tic-Tac-Toe" type="Node"]
+script = ExtResource("1_84bu2")
+
+[node name="Board" parent="." instance=ExtResource("1_sp424")]
+position = Vector2(320, 180)
+scale = Vector2(2, 2)

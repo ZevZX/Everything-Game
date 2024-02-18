@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpvyedjrewjky"]
+
+[ext_resource type="Script" path="res://game/tic_tac_toe/game_over_menu.gd" id="1_gqylv"]
+
+[node name="GameOverMenu" type="CanvasLayer"]
+script = ExtResource("1_gqylv")
+
+[node name="RestartButton" type="Button" parent="."]
+process_mode = 2
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -56.5
+offset_top = -22.5
+offset_right = 56.5
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play Again"
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0.623529, 0.815686, 1, 1)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -30.0
+offset_right = -89.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResultLabel" type="Label" parent="."]
+offset_left = 254.0
+offset_top = 175.0
+offset_right = 362.0
+offset_bottom = 198.0
+text = "Player 1 Wins!"
+
+[connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]
