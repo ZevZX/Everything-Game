@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://tmcq5gpw66gu"]
+
+[ext_resource type="FontFile" uid="uid://r5ttqaxnuvgk" path="res://fonts/MaldiniBold.ttf" id="1_jt2fd"]
+
+[node name="Hud" type="CanvasLayer"]
+
+[node name="ScoreLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -320.0
+offset_right = -190.0
+offset_bottom = 55.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_jt2fd")
+theme_override_font_sizes/font_size = 16
+text = "SCORE: 0"
