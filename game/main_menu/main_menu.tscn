@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dy0688vhr1ud6"]
+[gd_scene load_steps=4 format=3 uid="uid://dy0688vhr1ud6"]
 
-[ext_resource type="Script" path="res://game/main_menu/start_button.gd" id="1_3sroh"]
+[ext_resource type="Script" path="res://game/main_menu/tic_tac_toe.gd" id="1_3sroh"]
+[ext_resource type="Script" path="res://game/main_menu/snake.gd" id="2_3npo2"]
 [ext_resource type="Script" path="res://game/main_menu/quit_button.gd" id="2_cqha5"]
 
 [node name="start_menu" type="Node2D"]
@@ -30,7 +31,7 @@ offset_top = 221.0
 offset_right = 477.0
 offset_bottom = 259.0
 text = "Snake"
-script = ExtResource("1_3sroh")
+script = ExtResource("2_3npo2")
 metadata/_edit_use_anchors_ = true
 
 [node name="quit_button" type="Button" parent="CanvasLayer"]
