@@ -91,7 +91,6 @@ func start_game():
 	game_started = true
 	$MoveTimer.start()
 
-
 func _on_move_timer_timeout():
 	#allow snake movement
 	can_move = true

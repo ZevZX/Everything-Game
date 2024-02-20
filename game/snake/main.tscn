@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://beaa828xfn3nx" path="res://game/snake/snake_segment.tscn" id="2_4h8t2"]
 [ext_resource type="PackedScene" uid="uid://tmcq5gpw66gu" path="res://game/snake/hud.tscn" id="3_hc7a4"]
 [ext_resource type="Texture2D" uid="uid://dxyvfago0gd5f" path="res://game/snake/apple.png" id="4_lpqqk"]
-[ext_resource type="PackedScene" uid="uid://cad25ojl47q8" path="res://game/snake/game_over_menu.tscn" id="5_56s3e"]
+[ext_resource type="PackedScene" uid="uid://cad25ojl47q8" path="res://game/main_menu/game_over_menu.tscn" id="5_56s3e"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_p0k24")

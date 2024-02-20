@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dy0688vhr1ud6"]
 
-[ext_resource type="Script" path="res://game/main_menu/tic_tac_toe.gd" id="1_3sroh"]
+[ext_resource type="Script" path="res://game/main_menu/tic-tac-toe.gd" id="1_g276c"]
 [ext_resource type="Script" path="res://game/main_menu/snake.gd" id="2_3npo2"]
 [ext_resource type="Script" path="res://game/main_menu/quit_button.gd" id="2_cqha5"]
 
@@ -22,7 +22,7 @@ offset_top = 162.0
 offset_right = 480.0
 offset_bottom = 200.0
 text = "Tic-Tac-Toe"
-script = ExtResource("1_3sroh")
+script = ExtResource("1_g276c")
 metadata/_edit_use_anchors_ = true
 
 [node name="snake" type="Button" parent="CanvasLayer"]
