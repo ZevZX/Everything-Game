@@ -41,11 +41,12 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -133.5
-offset_top = -86.0
+offset_top = -115.0
 offset_right = 133.5
-offset_bottom = -16.0
+offset_bottom = -45.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_4cjqx")
 theme_override_font_sizes/font_size = 50
 text = "GAME OVER!"
 horizontal_alignment = 1
@@ -53,9 +54,9 @@ vertical_alignment = 1
 
 [node name="RestartButton" type="Button" parent="."]
 offset_left = 200.0
-offset_top = 184.0
+offset_top = 139.0
 offset_right = 450.0
-offset_bottom = 247.0
+offset_bottom = 202.0
 theme_override_fonts/font = ExtResource("1_4cjqx")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_8be6j")
@@ -63,4 +64,17 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_l65v3")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_u4ktg")
 text = "Play Again"
 
+[node name="MenuButton" type="Button" parent="."]
+offset_left = 200.0
+offset_top = 222.0
+offset_right = 457.0
+offset_bottom = 285.0
+theme_override_fonts/font = ExtResource("1_4cjqx")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_8be6j")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l65v3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_u4ktg")
+text = "Back to Menu"
+
 [connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="MenuButton" to="." method="_on_menu_button_pressed"]

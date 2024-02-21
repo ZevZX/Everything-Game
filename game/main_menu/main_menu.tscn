@@ -7,6 +7,7 @@
 [node name="start_menu" type="Node2D"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 3
 
 [node name="title" type="TextEdit" parent="CanvasLayer"]
 offset_left = 61.0
