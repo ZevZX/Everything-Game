@@ -18,6 +18,7 @@ func draw_x():
 	text = "X"
 	cell_value = "X"
 	tween.tween_property(self, "self_modulate:a", 1, 0.5)
+	cell_updated.emit(self)
 
 func draw_o():
 	var tween = get_tree().create_tween()
@@ -26,6 +27,7 @@ func draw_o():
 	text = "O"
 	cell_value = "O"
 	tween.tween_property(self, "self_modulate:a", 1, 0.5)
+	cell_updated.emit(self)
 
 func draw_cell():
 	if main.is_game_end: return
@@ -36,11 +38,9 @@ func draw_cell():
 				main.turn = 1
 				draw_x()
 			1:
-				main.turn = 0
-				draw_o()
+				return
 	
 	mouse_default_cursor_shape = Control.CURSOR_ARROW
-	cell_updated.emit(self)
 
 func glow(color):
 	var tween = get_tree().create_tween()

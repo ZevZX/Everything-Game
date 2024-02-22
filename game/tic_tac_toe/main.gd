@@ -31,8 +31,8 @@ func _on_cell_updated(cell):
 	elif play_with == "AI" and turn == 1:
 		var ai_cell = cells[randi() % cells.size()]
 		if ai_cell.cell_value == "":
-			await get_tree().create_timer(0.5).timeout
-			ai_cell.draw_cell()
+			turn = 0
+			ai_cell.draw_o()
 		else:
 			_on_cell_updated(cell)
 
